@@ -10,6 +10,8 @@ c.fillRect(0, 0, canvas.width, canvas.height);
 
 const gravity = 0.7;
 
+
+
 const background = new sprite({
     position: {
         x: 0,
@@ -19,7 +21,7 @@ const background = new sprite({
         x: 0,
         y: 215
     },
-    imageSrc: 'free pixel art forest/preview/background.png',
+    imageSrc: 'img/Background.png',
     scale: {
         x: 1.349,
         y: 1
@@ -66,31 +68,31 @@ const player = new fighter({
     },
     sprites: {
         idle: {
-            imageSrc: 'wizard pack/idle.png',
+            imageSrc: 'img/wizard pack/idle.png',
             maxFrames: 6,
         },
         run: {
-            imageSrc: 'wizard pack/run.png',
+            imageSrc: 'img/wizard pack/run.png',
             maxFrames: 8,
         },
         jump: {
-            imageSrc: 'wizard pack/jump.png',
+            imageSrc: 'img/wizard pack/jump.png',
             maxFrames: 2,
         },
         fall: {
-            imageSrc: 'wizard pack/fall.png',
+            imageSrc: 'img/wizard pack/fall.png',
             maxFrames: 2,
         },
         attack1: {
-            imageSrc: 'wizard pack/attack3.png',
+            imageSrc: 'img/wizard pack/attack3.png',
             maxFrames: 4,
         },
         takeHit: {
-            imageSrc: 'wizard pack/hit.png',
+            imageSrc: 'img/wizard pack/hit.png',
             maxFrames: 4,
         },
         death: {
-            imageSrc: 'wizard pack/death.png',
+            imageSrc: 'img/wizard pack/death.png',
             maxFrames: 7,
         },
     },
@@ -319,6 +321,7 @@ animate();
 
 window.addEventListener('keydown', (event) => {
     if (!player.dead) {
+
         switch (event.key) {
             //Player
             case 'd':
@@ -397,5 +400,15 @@ window.addEventListener('keyup', (event) => {
 })
 
 
+audio = new Audio('sound.mp3');
+// audio.play();
+setTimeout(()=>{
+    try {
+        audio.play()
+    } catch (error) {
+        console.log("play");
+    };
+    
+},1000);
 
 
