@@ -21,7 +21,7 @@ const background = new sprite({
         x: 0,
         y: 215
     },
-    imageSrc: 'img/Background.png',
+    imageSrc: './img/Background.png',
     scale: {
         x: 1.349,
         y: 1
@@ -34,7 +34,7 @@ const shop = new sprite({
         y: 170
     },
     
-    imageSrc: 'img/shop.png',
+    imageSrc: './img/shop.png',
     scale: {
         x: 2.75,
         y: 2.75
@@ -56,7 +56,7 @@ const player = new fighter({
         y: 0
     },
     color: 'red',
-    imageSrc: 'player/idle.png',
+    imageSrc: './img/Wizard Pack/idle.png',
     maxFrames: 8,
     scale: {
         x: 1.7,
@@ -68,31 +68,31 @@ const player = new fighter({
     },
     sprites: {
         idle: {
-            imageSrc: 'img/wizard pack/idle.png',
+            imageSrc: './img/wizard pack/idle.png',
             maxFrames: 6,
         },
         run: {
-            imageSrc: 'img/wizard pack/run.png',
+            imageSrc: './img/wizard pack/run.png',
             maxFrames: 8,
         },
         jump: {
-            imageSrc: 'img/wizard pack/jump.png',
+            imageSrc: './img/wizard pack/jump.png',
             maxFrames: 2,
         },
         fall: {
-            imageSrc: 'img/wizard pack/fall.png',
+            imageSrc: './img/wizard pack/fall.png',
             maxFrames: 2,
         },
         attack1: {
-            imageSrc: 'img/wizard pack/attack3.png',
+            imageSrc: './img/wizard pack/attack3.png',
             maxFrames: 4,
         },
         takeHit: {
-            imageSrc: 'img/wizard pack/hit.png',
+            imageSrc: './img/wizard pack/hit.png',
             maxFrames: 4,
         },
         death: {
-            imageSrc: 'img/wizard pack/death.png',
+            imageSrc: './img/wizard pack/death.png',
             maxFrames: 7,
         },
     },
@@ -121,7 +121,7 @@ const enemy = new fighter({
         y: 0
     },
     color: 'blue',
-    imageSrc: 'img/kenji/idle.png',
+    imageSrc: './img/kenji/idle.png',
     maxFrames: 4,
     scale: {
         x: 2.5,
@@ -133,31 +133,31 @@ const enemy = new fighter({
     },
     sprites: {
         idle: {
-            imageSrc: 'img/kenji/idle.png',
+            imageSrc: './img/kenji/idle.png',
             maxFrames: 4,
         },
         run: {
-            imageSrc: 'img/kenji/run.png',
+            imageSrc: './img/kenji/run.png',
             maxFrames: 8,
         },
         jump: {
-            imageSrc: 'img/kenji/jump.png',
+            imageSrc: './img/kenji/jump.png',
             maxFrames: 2,
         },
         fall: {
-            imageSrc: 'img/kenji/fall.png',
+            imageSrc: './img/kenji/fall.png',
             maxFrames: 2,
         },
         attack1: {
-            imageSrc: 'img/kenji/attack3.png',
+            imageSrc: './img/kenji/attack3.png',
             maxFrames: 3,
         },
         takeHit: {
-            imageSrc: 'img/kenji/take hit.png',
+            imageSrc: './img/kenji/take hit.png',
             maxFrames: 3,
         },
         death: {
-            imageSrc: 'img/kenji/death.png',
+            imageSrc: './img/kenji/death.png',
             maxFrames: 7,
         },
     },
